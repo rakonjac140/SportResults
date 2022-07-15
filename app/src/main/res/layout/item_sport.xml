@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="50dp"
+    android:layout_marginHorizontal="50dp">
+
+    <ImageView
+        android:id="@+id/sportImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="1dp"
+        android:paddingRight="1dp"
+        android:paddingLeft="1dp"
+        android:paddingBottom="1dp"
+        android:background="#042E43"
+    />
+
+    <TextView
+        android:id="@+id/sportIdName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SportName"
+        android:textAlignment="center"
+        android:textColor="#D9FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sportImg"
+        app:layout_constraintEnd_toEndOf="@+id/sportImg"
+        app:layout_constraintStart_toStartOf="@+id/sportImg"
+        app:layout_constraintTop_toTopOf="@+id/sportImg"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

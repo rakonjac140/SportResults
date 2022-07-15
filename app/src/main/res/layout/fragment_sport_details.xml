@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_marginHorizontal="30dp"
+    tools:context=".eventlist.view.EventListFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:background="#00141E"
+        >
+
+        <ImageView
+            android:id="@+id/logoImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#00141E"
+            tools:ignore="MissingConstraints"
+        />
+
+        <TextView
+            android:id="@+id/homeTeam"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/logoImg"
+            tools:text="Home Team"
+            android:textColor="#EEEEEE"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+        />
+
+        <ImageView
+            android:id="@+id/logoImg2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#00141E"
+            app:layout_constraintStart_toEndOf="@id/matchScore"
+            tools:ignore="MissingConstraints"
+        />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/matchScore"
+            app:layout_constraintStart_toEndOf="@+id/homeTeam"
+            tools:text="Status"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            android:textColor="@color/white"
+        />
+
+        <TextView
+            android:id="@+id/awayTeam"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/logoImg2"
+            app:layout_constraintStart_toEndOf="@+id/status"
+            tools:text="Away Team"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+        />
+
+        <TextView
+            android:id="@+id/matchStart"
+            android:layout_width="132dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toEndOf="@+id/logoImg"
+            tools:ignore="MissingConstraints"
+            android:textColor="@color/white"
+            tools:text="Start time"
+            android:paddingTop="15dp"
+            android:textAlignment="center"
+        />
+
+        <TextView
+            android:id="@+id/matchScore"
+            android:layout_width="132dp"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/logoImg"
+            app:layout_constraintTop_toBottomOf="@+id/matchStart"
+            tools:ignore="MissingConstraints"
+            tools:text="Score"
+            android:paddingTop="15dp"
+            android:textAlignment="center"
+        />
+
+        <TextView
+            android:id="@+id/tournament"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/status"
+            android:layout_marginTop="30dp"
+            android:background="#001E28"
+            android:text="Tournament"
+            android:textColor="#EEEEEE"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+        />
+
+        <TextView
+            android:id="@+id/odds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Odds"
+            android:background="#001E28"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints,NotSibling"
+            app:layout_constraintTop_toBottomOf="@+id/tournament"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/odds">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/win1"
+                tools:text="WIN1"
+                android:layout_marginStart="30dp"
+
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/draw"
+                tools:text="DRAW"
+                android:layout_marginLeft="82dp"
+
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/win3"
+                tools:text="WIN2"
+                android:layout_marginLeft="78dp"
+            />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
